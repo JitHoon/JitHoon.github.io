@@ -20,8 +20,9 @@ function toDoRemove(event) {
 }
 
 function toDoCreate(newTodo) {
-    const toDoLi = document.createElement("li");
+    const toDoLi = document.createElement("div");
     toDoLi.id = newTodo.id;
+    toDoLi.className = "btn";
     const toDoSpan = document.createElement("span");
     toDoSpan.innerText = newTodo.text;
     const toDoBotton = document.createElement("botton");
