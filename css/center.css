@@ -5,13 +5,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    border: 3px;
-    border-style: solid;
-    border-color: white;
 }
 
 #greeting {
+    color: white;
+}
+
+#clock {
     color: white;
 }
 
