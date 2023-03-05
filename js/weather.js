@@ -1,5 +1,5 @@
-const weather = document.querySelector("#weather span:first-child");
-const city = document.querySelector("#weather span:last-child");
+const weather = document.querySelector("#weather h2:first-child");
+const city = document.querySelector("#weather h2:last-child");
 
 function onGeoOk(position) {
     // position: getCurrentPosition이 주는 object
