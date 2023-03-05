@@ -1,6 +1,10 @@
 #center {
     height: 80vh;
     width: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
     border: 3px;
     border-style: solid;
