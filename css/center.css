@@ -10,3 +10,11 @@
     border-style: solid;
     border-color: white;
 }
+
+#greeting {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
