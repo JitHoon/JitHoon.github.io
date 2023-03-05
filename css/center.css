@@ -1,0 +1,8 @@
+#center {
+    height: 80vh;
+    width: 50vh;
+    
+    border: 3px;
+    border-style: solid;
+    border-color: white;
+}
