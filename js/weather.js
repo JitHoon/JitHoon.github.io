@@ -1,5 +1,4 @@
 const weather = document.querySelector("#weather h2:first-child");
-const city = document.querySelector("#weather h2:last-child");
 
 function onGeoOk(position) {
     // position: getCurrentPosition이 주는 object
@@ -12,8 +11,7 @@ function onGeoOk(position) {
     fetch(weatherURL)
     .then((response) => response.json())
     .then((data) => {
-      city.innerText = data.name;
-      weather.innerText = `${data.weather[0].main} ${data.main.temp}`;
+      weather.innerText = `${data.name} | ${data.main.temp}°C | ${data.weather[0].main}`;
     });
 }
 
