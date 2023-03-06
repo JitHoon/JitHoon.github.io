@@ -1,8 +1,14 @@
 body{
-    height: 100vh;
+    height: auto;
+    width: auto;
+
     display: flex;
     justify-content:space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+    margin: 25px;
 
-    background: linear-gradient(45deg, #FC466B, #3F5EFB);
+    background: linear-gradient(0.25turn, #223182, white);
 }
