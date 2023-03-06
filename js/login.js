@@ -1,5 +1,6 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
+const greetingStar = document.querySelector("#greetingStar");
 const greeting = document.querySelector("#greeting");
 
 const USER_NAME_KEY = "userName";
@@ -15,9 +16,11 @@ function func(event) {
 };
 
 function showGreeting(name) {
+    greetingStar.classList.remove(CSS_HIDDEN);
     greeting.classList.remove(CSS_HIDDEN);
     // `${변수}`
-    greeting.innerText = `✨ Hello ${name} 📣🐰`;
+    greetingStar.innerText = "✨ 📣🐰 ✨";
+    greeting.innerText = `Hello, ${name}`;
 }
 
 // localStorage에 userName 여부 확인
