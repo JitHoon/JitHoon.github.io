@@ -15,3 +15,26 @@ body{
 #left, #right{
     margin: 0px;
 }
+
+.fade-in-box {
+    animation: fadein 1.5s;
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+}
+
+@keyframes fadein {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+}

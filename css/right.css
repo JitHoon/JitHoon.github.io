@@ -1,4 +1,4 @@
-#right {
+.right {
     height: 100vh;
     width: 100vh;
     
@@ -32,7 +32,7 @@
     color: gray;
 }
 
-#to-do-list{
+.to-do-list{
     font-family: 'Nanum Gothic', sans-serif;
     margin: 20px;
 

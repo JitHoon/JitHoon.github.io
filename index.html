@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="./css/right.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Shantell+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Shantell+Sans:ital@1&family=Tilt+Neon&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="left">
+    <div class="left fade-in-box">
         <div id="weather">
             <h2></h2>
         </div>
@@ -33,25 +35,25 @@
             <button class="rbg link-bnt" role="button">✨</button>
         </div>
     </div>
-    <div class="center">
+    <div class="center fade-in-box">
         <form id="login-form" class="hidden">
             <div class="inputbox">
                 <input type="text" maxlength="9" style="color: rgba(255,255,255);"required></input>
-                <span>Nick Name</span>
+                <span>Nickname</span>
             </div>
         </form>
-        <h2 id="greetingStar" class="hidden"></h2>
-        <h2 id="greeting" class="hidden"></h2>
+        <h2 class="greetingStar hidden"></h2>
+        <h2 class="greeting hidden"></h2>
         <div id="quote">
             <h2 id="quote-content"></h2>
             <h2 id="quote-name"></h2>
         </div>
     </div>
-    <div id="right">
+    <div class="right fade-in-box">
         <form id="to-do-form">
             <input id="to-do-input" type="text" placeholder="Write a To Do & Press Enter"/></input>
         </form>
-        <div id="to-do-list"></div>
+        <div class="to-do-list"></div>
     </div>
     <script src="./js/bgc.js"></script>
     <script src="./js/logo.js"></script>

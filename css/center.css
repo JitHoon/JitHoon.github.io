@@ -10,14 +10,16 @@
 }
 
 .hidden {
+    animation: fadein 3s;
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
     display: none;
 }
 
-#greeting {
+.greeting {
     margin: 0px;
     font-size: 40px;
     color: white;
-    font-family: 'Shantell Sans', cursive;
+    font-family: 'Tilt Neon', cursive;
 }
 
 .inputbox {
