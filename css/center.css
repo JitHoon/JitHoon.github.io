@@ -5,16 +5,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#greeting {
     color: white;
 }
 
-#clock {
+#greeting {
+    text-align:left;
     color: white;
 }
 
 .hidden {
     display: none;
 }
+
+#quote{
+    text-align:left;
+}
+

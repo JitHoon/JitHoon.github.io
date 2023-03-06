@@ -5,9 +5,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
 }
 
-#quote{
-    text-align: center;
+#clock{
+    font-family: sans-serif;
+    font-size: 40px;
+    color: white;
 }
