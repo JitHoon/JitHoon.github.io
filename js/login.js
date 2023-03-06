@@ -1,10 +1,11 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
-const greetingStar = document.querySelector("#greetingStar");
-const greeting = document.querySelector("#greeting");
+const greetingStar = document.querySelector(".greetingStar");
+const greeting = document.querySelector(".greeting");
 
 const USER_NAME_KEY = "userName";
 const CSS_HIDDEN = "hidden";
+const FADE_IN_BOX = "fade-in-box";
 
 function func(event) {
     event.preventDefault();
@@ -18,6 +19,8 @@ function func(event) {
 function showGreeting(name) {
     greetingStar.classList.remove(CSS_HIDDEN);
     greeting.classList.remove(CSS_HIDDEN);
+    greetingStar.classList.add(FADE_IN_BOX);
+    greeting.classList.add(FADE_IN_BOX);
     // `${변수}`
     greetingStar.innerText = "✨ 📣🐰 ✨";
     greeting.innerText = `Hello, ${name}`;

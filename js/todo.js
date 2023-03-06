@@ -1,6 +1,6 @@
 const toDoForm = document.getElementById("to-do-form");
 const toDoInput = document.querySelector("#to-do-form input");
-const toDoList = document.getElementById("to-do-list");
+const toDoList = document.querySelector(".to-do-list");
 const TODOS = "toDos"
 
 let toDos = []; // 수정 가능
@@ -23,6 +23,7 @@ function toDoCreate(newTodo) {
     const toDoLi = document.createElement("div");
     toDoLi.id = newTodo.id;
     toDoLi.className = "btn";
+    toDoLi.classList.add(FADE_IN_BOX);
     const toDoSpan = document.createElement("span");
     toDoSpan.innerText = newTodo.text;
     const toDoBotton = document.createElement("botton");
