@@ -3,12 +3,15 @@ body{
     width: auto;
 
     display: flex;
-    justify-content:space-evenly;
+    justify-content:center;
     align-items: center;
     flex-wrap: wrap;
-    justify-content:center;
     
     margin: 25px;
 
-    background: linear-gradient(0.25turn, #223182, white);
+    background: linear-gradient(0.25turn, #FC466B, #3F5EFB);
+}
+
+#left, #right{
+    margin: 0px;
 }

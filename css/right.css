@@ -1,6 +1,6 @@
 #right {
-    height: 90vh;
-    width: 50vh;
+    height: 100vh;
+    width: 100vh;
     
     display: flex;
     flex-direction: column;
@@ -10,8 +10,8 @@
 
 #to-do-input{
     display: block;
-    width: 50vh;
-    margin-top: 30px;
+    width: 35vh;
+    margin-top: 100px;
     padding: 0;
     border: none;
     outline: none;
@@ -33,23 +33,25 @@
 }
 
 #to-do-list{
-    margin-top: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 20px;
+
 }
   
 .btn {
     display: flex;
     align-items: center;
     justify-content:space-between;
-    width: 40vh;
-    font-size: 13px;
+    width: 35vh;
+    font-size: 14px;
     padding: 0px 15px;
     margin-bottom: 20px;
     
     height: 35px;
     border: none;
     outline: none;
-    background: rgba(255,255,255, 0.3);
-    color: black;
+    background: rgba(255,255,255, 0.1);
+    color: white;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -65,15 +67,15 @@
     top: -2px;
     background: linear-gradient(
       124deg,
-      #ff2400,
-      #e81d1d,
-      #e8b71d,
-      #e3e81d,
-      #1de840,
-      #1ddde8,
+      #003cff,
+      #491de8,
+      #1d31e8,
+      #1d49e8,
+      #3b1de8,
+      #1d9ee8,
       #2b1de8,
-      #dd00f3,
-      #dd00f3
+      #0c00f3,
+      #3900f3
     );
     background-size: 400%;
     z-index: -1;
