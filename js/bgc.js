@@ -19,7 +19,7 @@ const colors = [
     "#ff3f34"
 ];
   
-const bnt = document.querySelector("button");
+const bnt = document.querySelector(".rbg");
 const body = document.body;
 
 function changeColor() {
