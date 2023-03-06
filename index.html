@@ -9,10 +9,15 @@
     <link rel="stylesheet" href="./css/left.css">
     <link rel="stylesheet" href="./css/center.css">
     <link rel="stylesheet" href="./css/right.css">
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Shantell+Sans:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="left">
+        <div id="weather">
+            <h2></h2>
+        </div>
         <h2 id="clock"></h2>
         <div id="logo"></div>
         <div id="links">
@@ -28,18 +33,18 @@
             <button class="rbg link-bnt" role="button">✨</button>
         </div>
     </div>
-    <div id="center">
+    <div class="center">
         <form id="login-form" class="hidden">
-            <input required maxlength="15" placeholder="Put your Name"></input>
+            <div class="inputbox">
+                <input type="text" maxlength="9" style="color: rgba(255,255,255);"required></input>
+                <span>Nick Name</span>
+            </div>
         </form>
+        <h2 id="greetingStar" class="hidden"></h2>
         <h2 id="greeting" class="hidden"></h2>
-        <div id="weather">
-            <h2></h2>
-            <h2></h2>
-        </div>
         <div id="quote">
-            <h2></h2>
-            <h2></h2>
+            <h2 id="quote-content"></h2>
+            <h2 id="quote-name"></h2>
         </div>
     </div>
     <div id="right">
