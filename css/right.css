@@ -5,24 +5,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+}
+
+#to-do-form{
+    width: 99%;
 }
 
 #to-do-input{
+    height: 47px;
+    width: 100%;
     display: block;
-    width: 35vh;
     margin-top: 100px;
     padding: 0;
     border: none;
     outline: none;
     box-sizing: border-box;
     text-align: left;
-
     background: rgba(255,255,255);
     padding: 10px;
     padding-left: 20px;
-    height: 50px;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 50px;
 
     caret-color:indigo;
@@ -33,29 +35,39 @@
 }
 
 .to-do-list{
-    font-family: 'Nanum Gothic', sans-serif;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 20px;
-
+    font-family: 'Tilt Neon', 'Nanum Gothic Coding';
 }
-  
+
 .btn {
+    height: auto;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content:space-between;
-    width: 35vh;
-    font-size: 14px;
-    padding: 0px 15px;
+
+    padding: 15px;
     margin-bottom: 20px;
     
-    height: 35px;
-    border: none;
-    outline: none;
-    background: rgba(255,255,255, 0.1);
-    color: white;
-    cursor: pointer;
     position: relative;
     z-index: 0;
     border-radius: 10px;
+
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255,255,255, 0.1);
+    color: white;
+    cursor: pointer;
+}
+
+.btn > botton{
+    margin: 2px;
+    color: rgba(0, 0, 0, 0.75);
 }
   
 .btn::before {
