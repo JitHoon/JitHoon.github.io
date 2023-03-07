@@ -1,0 +1,27 @@
+.btns {
+    height: 40px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+}
+
+.btns > div{
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: rgb(252, 252, 252, 0.1);
+}
+
+.btns > div:hover {
+    color: #000;
+    background: #febf00;
+}
+  
