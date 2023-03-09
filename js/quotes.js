@@ -1,5 +1,14 @@
 const quotes = [
     {
+        quote: "Still waters run deep",
+        author: "- 김영서 회원님 -",
+    },
+    {
+        quote: "스터디 멈춰",
+        author: "- 최지훈 회원님 -",
+    },
+    /*
+    {
         quote: "The way to get started is to quit talking and begin doing.",
         author: "- Walt Disney -",
     },
@@ -40,8 +49,9 @@ const quotes = [
         quote: "Travel expands the mind and fills the gap.",
         author: "- Sheda Savage -",
     }
+    */
 ];
-  
+
 const q = document.querySelector("#quote h2:first-child");
 const a = document.querySelector("#quote h2:last-child");
 
