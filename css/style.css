@@ -1,3 +1,8 @@
+@import "./center.css";
+@import "./left.css";
+@import "./right.css";
+@import "./scroll.css";
+
 body{
     height: auto;
     width: auto;
