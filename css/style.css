@@ -1,14 +1,14 @@
 @import "./center.css";
-@import "./left.css";
+@import "./home.css";
 @import "./right.css";
-@import "./scroll.css";
+@import "./menu.css";
 
 body{
     height: auto;
     width: auto;
 
     display: flex;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items: center;
     flex-wrap: wrap;
     
@@ -17,7 +17,7 @@ body{
     background: linear-gradient(0.25turn, #FC466B, #3F5EFB);
 }
 
-#left, #right{
+#home, #right{
     margin: 0px;
 }
 
