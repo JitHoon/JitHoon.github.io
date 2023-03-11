@@ -1,78 +1,88 @@
-.user {
-    height: 100vh;
-    width: 100vh;
+.user, .form__inputbox, #quote{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.user {
+    height: 100vh;
+    width: 100vh;
 
     color: white;
 }
-
 .login-form__inputbox {
     width: 35vh;
     height: 50px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     margin: 0px;
-
+    
     position: relative;
 }
-
 .login-form__inputbox input {
-    width: 32vh;
-
-    text-align: center;
-    border: 2px solid white;
-    outline: none;
-    background: none;
+    width: 35vh;
     padding: 10px;
-    border-radius: 10px;
-    font-size: 1.2em;
-    color: rgba(255,255,255, 0.7);
-}
+    display: flex;
+    justify-content:center;
 
+    border: 2px solid white;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--gray);
+    background: none;
+}
 .login-form__inputbox span {
     position: absolute;
-    top: 15px;
+    top: 14px;
     left: 15px;
-    font-size: 15px;
+    
+    font-size: 20px;
     transition: 0.6s;
-    color: rgba(255,255,255, 0.7);
+    color: var(--gray);
 }
+#login-form__submit{
+    height: 50px;
+    width: 50px;
+    padding: 0px;
 
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    
+    font-weight: bolder;
+    font-size: 30px;
+
+    background: transparent;
+    border: none;
+    text-decoration: none;
+    outline: 0;
+    white-space: nowrap; 
+    cursor: pointer;
+}
 .login-form__inputbox input:focus ~ span,
 .login-form__inputbox input:valid ~ span {
-    transform: translateY(-40px);
-    font-size: 20px;
+    transform: translateY(-50px);
+    font-size: 25px;
 }
-
 .greeting {
     margin: 0px;
     font-size: 40px;
     color: white;
     font-family: 'Tilt Neon', 'Nanum Gothic Coding';
 }
-
 #quote{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgba(255,255,255, 0.6);
+    color: var(--gray);
 }
-
 #quote__content{
     margin-top: 40px;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 23px;
     text-align: center;
 }
-
 #quote__name{
     margin: 0px;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
 }
-

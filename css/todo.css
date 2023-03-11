@@ -6,34 +6,52 @@
     flex-direction: column;
     align-items: center;
 }
-
 #todo__form{
-    width: 99%;
-}
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    margin-top: 100px;
 
+    position: relative;
+}
 #todo__input{
-    height: 47px;
     width: 100%;
     display: block;
-    margin-top: 100px;
-    padding: 0;
+    padding: 12px;
+    padding-left: 30px;
+    padding-right: 45px;
+    
     border: none;
     outline: none;
-    box-sizing: border-box;
     text-align: left;
-    background: rgba(255,255,255);
-    padding: 10px;
-    padding-left: 20px;
     font-size: 18px;
     border-radius: 50px;
-
+    background: rgba(255,255,255);
     caret-color:indigo;
 }
-
 #todo__input::placeholder {
     color: gray;
 }
-
+#todo__input::value {
+    word-break: break-all;
+}
+#todo__submit, .toDoGetEditInput{
+    background: transparent;
+    border: none;
+    text-decoration: none;
+    outline: 0;
+    white-space: nowrap; 
+    cursor: pointer;
+}
+#todo__submit{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    
+    font-weight: bolder;
+    font-size: 30px;
+    color: #ff7300;
+}
 .todo__list{
     width: 85%;
     display: flex;
@@ -44,9 +62,7 @@
     font-size: 18px;
     font-family: 'Tilt Neon', 'Nanum Gothic Coding';
 }
-
 /* 아래부터 JS 생성 tag들 */
-
 .btn {
     height: auto;
     width: 100%;
@@ -67,24 +83,19 @@
     color: white;
     cursor: pointer;
 }
-
 .toDoSpan{
     word-break: break-all;
 }
-
-
 .btn > .toDoLiBtn{
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: rgba(0, 0, 0, 0.75);
 }
-
 .toDoEdit{
     font-size: 18px;
     margin-left: 5px;
 }
-
 .btn::before {
     position: absolute;
     content: "";
@@ -112,11 +123,9 @@
     transition: opacity 0.3s ease-in-out;
     border-radius: 10px;
 }
-  
 .btn:hover::before {
     opacity: 1;
 }
-  
 .btn::after {
     z-index: -1;
     content: "";
@@ -128,7 +137,6 @@
     top: 0;
     border-radius: 10px;
 }
-  
 @keyframes move {
     0% {
         background-position: 0 0;
@@ -140,25 +148,21 @@
     background-position: 0 0;
     }
 }
-
 .toDoGetEditForm{
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-
 .toDoGetEditInput{
     height: 30px;
     width: 90%;
     margin-right: 10px;
 
     font-size: 18px;
-    color: white;
-    border: none;
     border-bottom: 3px solid rgba(255,255,255, 0.5);
-    background-color: rgba(255,255,255, 0);
-}
+    color: white;
 
+}
 .toDoGetEditSumit{
     padding: 5px 10px;
 
