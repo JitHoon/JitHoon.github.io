@@ -1,17 +1,14 @@
-.btns {
-    height: 40px;
-    width: 150px;
+.menu {
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    right: 20px;
+    right: 30px;
     bottom: 50px;
 }
 
-.btns > div{
-    height: 35px;
-    width: 35px;
+.menu > div, .reset{
+    padding: 8px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +19,7 @@
     background-color: rgb(255, 255, 255, 0.1);
 }
 
-.btns > div:hover {
+.menu > div:hover,  .menu > i:hover{
     -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
