@@ -22,6 +22,7 @@ button{
 }
 :root{
     --gray: rgba(255,255,255, 0.7);
+    font-family: 'Tilt Neon', 'Nanum Gothic Coding';
 }
 #home, #right{
     margin: 0px;
