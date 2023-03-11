@@ -8,15 +8,6 @@ const USER_NAME_KEY = "userName";
 const CSS_HIDDEN = "hidden";
 const FADE_IN_BOX = "fade-in-box";
 
-function func(event) {
-    event.preventDefault();
-    const userName = loginInput.value;
-    
-    localStorage.setItem(USER_NAME_KEY,userName);
-    loginForm.classList.add(CSS_HIDDEN);
-    showGreeting(userName);
-};
-
 function showGreeting(name) {
     greetingStar.classList.remove(CSS_HIDDEN);
     greeting.classList.remove(CSS_HIDDEN);
@@ -26,23 +17,28 @@ function showGreeting(name) {
     greetingStar.innerText = "✨ 📣🐰 ✨";
     greeting.innerText = `Hello, ${name}`;
 }
-
+function saveNickname(event) {
+    event.preventDefault();
+    const userName = loginInput.value;
+    
+    localStorage.setItem(USER_NAME_KEY,userName);
+    loginForm.classList.add(CSS_HIDDEN);
+    showGreeting(userName);
+};
 function resetNickname(event){ 
+    window.scrollTo({ top: document.body.scrollHeight/3, behavior: "smooth" });
     greetingStar.classList.add(CSS_HIDDEN);
     greeting.classList.add(CSS_HIDDEN);
     loginForm.classList.remove(CSS_HIDDEN);
     localStorage.removeItem("userName");
     checkUsername();
 }
-
-// localStorage에 userName 여부 확인
-
 function checkUsername() {
     const savedUsername = localStorage.getItem(USER_NAME_KEY);
     if (savedUsername === null) {
         loginForm.classList.remove(CSS_HIDDEN);
         // form의 submit의 기본 동작은 브라우저를 새로고침한다.
-        loginForm.addEventListener("submit", func);
+        loginForm.addEventListener("submit", saveNickname);
     } else {
         showGreeting(savedUsername);
     };

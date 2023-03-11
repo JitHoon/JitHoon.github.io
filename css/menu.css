@@ -1,14 +1,14 @@
-.menu, .menu > div, .reset {
+.menu, .menu > div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .menu {
     position: fixed;
-    right: 30px;
-    bottom: 50px;
+    right: 4vh;
+    bottom: 7.5vh;
 }
-.menu > div, .reset{
+.menu > div{
     padding: 8px 10px;
     margin: 5px;
 
@@ -16,7 +16,17 @@
     border-radius: 50%;
     background-color: rgb(255, 255, 255, 0.1);
 }
-.menu > div:hover,  .menu > i:hover{
+.reset{
+    padding: 10px 20px;
+    position: absolute;
+    top: 293vh;
+    left: 25px;
+
+    color: #353638;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255, 0.1);
+}
+.menu > div:hover,  .reset:hover{
     -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
