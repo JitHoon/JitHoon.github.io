@@ -37,14 +37,14 @@
     margin-top: 20px;
 }
 
-.link-img{
+.links__img{
     height: 25px;
     width: 25px;
     
     text-align: center;
 }
 
-.link-bnt {
+.links__bnt {
   height: 3rem;
   width: 3rem;
   display: flex;
@@ -72,7 +72,7 @@
   touch-action: manipulation;
 }
 
-.link-bnt:hover {
+.links__bnt:hover {
   box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
   transition-duration: .1s;
 }
