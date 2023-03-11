@@ -17,6 +17,11 @@ body{
     background: linear-gradient(0.25turn, #FC466B, #3F5EFB);
 }
 
+button{
+    border: none;
+    background-color: #ffffff00;
+}
+
 #home, #right{
     margin: 0px;
 }
