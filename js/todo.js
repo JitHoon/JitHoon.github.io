@@ -1,6 +1,6 @@
-const toDoForm = document.getElementById("to-do-form");
-const toDoInput = document.querySelector("#to-do-form input");
-const toDoList = document.querySelector(".to-do-list");
+const toDoForm = document.getElementById("todo__form");
+const toDoInput = document.querySelector("#todo__form input");
+const toDoList = document.querySelector(".todo__list");
 
 const TODOS = "toDos"
 
@@ -22,8 +22,12 @@ function toDoEdit(event) {
     localStorage.setItem(TODOS, JSON.stringify(toDos));
     toDoEditForm.remove();
 
-    for (let i = 0; i < 3; i++) {
-        const toDoGetEditTargetChild = toDoEditTarget.children[i];
+    const toDoGetEditSpan = toDoEditTarget.children[0];
+    toDoGetEditSpan.classList.remove(CSS_HIDDEN);
+
+    const toDoGetEditBtns = toDoEditTarget.children[1];
+    for (let i = 0; i < 2; i++) {
+        const toDoGetEditTargetChild = toDoGetEditBtns.children[i];
         if (toDoGetEditTargetChild) {
             toDoGetEditTargetChild.classList.add(FADE_IN_BOX);
             toDoGetEditTargetChild.classList.remove(CSS_HIDDEN);
@@ -32,20 +36,19 @@ function toDoEdit(event) {
 }
 
 function toDoGetEdit(event) {
-    const toDoGetEditTarget = event.target.parentElement.parentElement;
-    const toDoGetEditSpan = event.target.parentElement.parentElement.children[0];
-    for (let i = 0; i < 3; i++) {
-        const toDoGetEditTargetChild = event.target.parentElement.parentElement.children[i];
-        if (toDoGetEditTargetChild) {
-            toDoGetEditTargetChild.classList.add(CSS_HIDDEN);
-        }
-    }
+    const toDoGetEditBtn = event.target;
+    const toDoGetRemoveBtn = event.target.nextElementSibling;
+    const toDoGetEditTarget = event.target.closest(".btn");
+    const toDoGetEditSpan = toDoGetEditTarget.children[0];
+    toDoGetEditSpan.classList.add(CSS_HIDDEN);
+    toDoGetEditBtn.classList.add(CSS_HIDDEN);
+    toDoGetRemoveBtn.classList.add(CSS_HIDDEN);
     
     const toDoGetEditForm = document.createElement("form");
     toDoGetEditForm.className = "toDoGetEditForm";
     const toDoGetEditInput = document.createElement("input");
     toDoGetEditInput.className = "toDoGetEditInput";
-    toDoGetEditInput.value=toDoGetEditSpan.innerText;
+    toDoGetEditInput.value = toDoGetEditSpan.innerText;
     const toDoGetEditSumit = document.createElement("input");
     toDoGetEditSumit.className = "toDoGetEditSumit";
     toDoGetEditSumit.type = "submit"
@@ -68,9 +71,7 @@ function toDoSave() {
 }
 
 function toDoRemove(event) {
-    // console.log(event); event -> target
-    // console.dir(event.target); event.target -> parentElement
-    toDoTarget = event.target.parentElement.parentElement;
+    toDoTarget = event.target.closest(".btn");
     toDoTarget.remove();
     toDos = toDos.filter(i => i.id !== parseInt(toDoTarget.id));
     toDoSave();
@@ -86,10 +87,10 @@ function toDoCreate(newTodo) {
     toDoSpan.classList.add("toDoSpan");
     const toDoLiBtn = document.createElement("div");
     toDoLiBtn.className = "toDoLiBtn";
-    const toDoEditBtn = document.createElement("botton");
+    const toDoEditBtn = document.createElement("button");
     toDoEditBtn.innerText = "✎";
     toDoEditBtn.classList.add("toDoEdit");
-    const toDoRemoveBtn = document.createElement("botton");
+    const toDoRemoveBtn = document.createElement("button");
     toDoRemoveBtn.innerText = "𝗫";
     toDoRemoveBtn.classList.add("toDoRemove");
 
