@@ -1,7 +1,7 @@
 const quotes = [
     {
         quote: "Still waters run deep",
-        author: "- 김영서 회원님 -",
+        author: "- 뇌냅스 회원님's pick 속담 -",
     },
     {
         quote: "스터디 멈춰",
