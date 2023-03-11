@@ -1,4 +1,4 @@
-const images = ["rabbit.jpeg", "sunglassRabbit.jpeg", "smallSunglassRabbit.png", "childRabbit.png"];
+const images = ["sunglassRabbit.jpeg", "childRabbit.png", "ribbonRabbit.png"];
 
 const image = images[Math.floor(Math.random()*images.length)];
 
