@@ -1,4 +1,4 @@
-.right {
+.todo {
     height: 100vh;
     width: 100vh;
     
@@ -40,6 +40,8 @@
     flex-direction: column;
     align-items: center;
     margin: 20px;
+
+    font-size: 16px;
     font-family: 'Tilt Neon', 'Nanum Gothic Coding';
 }
 
@@ -59,17 +61,26 @@
 
     border: none;
     outline: none;
-    font-size: 16px;
     background: rgba(255,255,255, 0.1);
     color: white;
     cursor: pointer;
 }
 
-.btn > botton{
-    margin: 2px;
+.toDoSpan{
+    word-break: break-all;
+}
+
+
+.btn > .toDoLiBtn{
     color: rgba(0, 0, 0, 0.75);
 }
-  
+
+.toDoEdit{
+    font-size: 17px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
 .btn::before {
     position: absolute;
     content: "";
@@ -124,4 +135,28 @@
     100% {
     background-position: 0 0;
     }
+}
+
+.toDoGetEditForm{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.toDoGetEditInput{
+    width: 90%;
+
+    color: white;
+    border: none;
+    border-bottom: 3px solid rgba(255,255,255, 0.5);
+    background-color: rgba(255,255,255, 0);
+}
+
+.toDoGetEditSumit{
+    padding: 5px 10px;
+
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0);
 }
