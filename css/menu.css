@@ -1,29 +1,25 @@
-.menu {
+.menu, .menu > div, .reset {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.menu {
     position: fixed;
     right: 30px;
     bottom: 50px;
 }
-
 .menu > div, .reset{
     padding: 8px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 5px;
 
     color: #353638;
     border-radius: 50%;
     background-color: rgb(255, 255, 255, 0.1);
 }
-
 .menu > div:hover,  .menu > i:hover{
     -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-
 @-webkit-keyframes shadow-drop-2-center {
     0% {
       -webkit-transform: translateZ(0);
@@ -38,7 +34,6 @@
               box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
     }
 }
-
 @keyframes shadow-drop-2-center {
     0% {
       -webkit-transform: translateZ(0);
