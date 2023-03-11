@@ -16,7 +16,7 @@ function onGeoOk(position) {
 }
 
 function onGeoError() {
-    alert("Can't find you. No weather for you.");
+  console.log("Can't find you. No weather for you.");
 }
   
 // navigator.geolocation.getCurrentPosition(위치를 찾았을 때 함수, 못 찾았을 때 함수)
