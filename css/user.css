@@ -6,21 +6,7 @@
     justify-content: center;
     align-items: center;
 
-
     color: white;
-}
-
-.hidden {
-    animation: fadein 3s;
-    -webkit-animation: fadein 3s; /* Safari and Chrome */
-    display: none;
-}
-
-.greeting {
-    margin: 0px;
-    font-size: 40px;
-    color: white;
-    font-family: 'Tilt Neon', 'Nanum Gothic Coding';
 }
 
 .inputbox {
@@ -60,6 +46,13 @@
 .inputbox input:valid ~ span {
     transform: translateY(-40px);
     font-size: 20px;
+}
+
+.greeting {
+    margin: 0px;
+    font-size: 40px;
+    color: white;
+    font-family: 'Tilt Neon', 'Nanum Gothic Coding';
 }
 
 #quote{

@@ -43,3 +43,9 @@ body{
           opacity: 1;
       }
 }
+
+.hidden {
+    animation: fadein 3s;
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    display: none;
+}
