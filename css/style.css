@@ -16,21 +16,20 @@ body{
 
     background: linear-gradient(0.25turn, #FC466B, #3F5EFB);
 }
-
 button{
     border: none;
     background-color: #ffffff00;
 }
-
+:root{
+    --gray: rgba(255,255,255, 0.7);
+}
 #home, #right{
     margin: 0px;
 }
-
 .fade-in-box {
     animation: fadein 1.5s;
     -webkit-animation: fadein 1.5s; /* Safari and Chrome */
 }
-
 @keyframes fadein {
       from {
           opacity: 0;
@@ -39,7 +38,6 @@ button{
           opacity: 1;
       }
 }
-
 @-webkit-keyframes fadein { /* Safari and Chrome */
       from {
           opacity: 0;
@@ -48,7 +46,6 @@ button{
           opacity: 1;
       }
 }
-
 .hidden {
     animation: fadein 3s;
     -webkit-animation: fadein 3s; /* Safari and Chrome */
