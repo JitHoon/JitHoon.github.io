@@ -52,8 +52,8 @@ const quotes = [
     */
 ];
 
-const q = document.querySelector("#quote h2:first-child");
-const a = document.querySelector("#quote h2:last-child");
+const q = document.querySelector("#quote__content");
+const a = document.querySelector("#quote__name");
 
 const todayQuote = Math.floor(Math.random()*quotes.length);
 

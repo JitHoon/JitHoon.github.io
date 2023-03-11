@@ -9,7 +9,7 @@
     color: white;
 }
 
-.inputbox {
+.login-form__inputbox {
     width: 35vh;
     height: 50px;
     display: flex;
@@ -20,7 +20,7 @@
     position: relative;
 }
 
-.inputbox input {
+.login-form__inputbox input {
     width: 32vh;
 
     text-align: center;
@@ -33,7 +33,7 @@
     color: rgba(255,255,255, 0.7);
 }
 
-.inputbox span {
+.login-form__inputbox span {
     position: absolute;
     top: 15px;
     left: 15px;
@@ -42,8 +42,8 @@
     color: rgba(255,255,255, 0.7);
 }
 
-.inputbox input:focus ~ span,
-.inputbox input:valid ~ span {
+.login-form__inputbox input:focus ~ span,
+.login-form__inputbox input:valid ~ span {
     transform: translateY(-40px);
     font-size: 20px;
 }
@@ -63,14 +63,14 @@
     color: rgba(255,255,255, 0.6);
 }
 
-#quote-content{
+#quote__content{
     margin-top: 40px;
     margin-bottom: 10px;
     font-size: 18px;
     text-align: center;
 }
 
-#quote-name{
+#quote__name{
     margin: 0px;
     font-size: 12px;
     text-align: center;
