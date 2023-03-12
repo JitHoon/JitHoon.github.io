@@ -4,12 +4,20 @@ const quotes = [
         author: "- 어떤 회원님's pick 속담 -",
     },
     {
-        quote: "스터디 멈춰",
+        quote: "스터디 멈춰image.png",
         author: "- 최지훈 회원님 -",
     },
     {
-        quote: "더운데 부채질 좀 해주세요",
+        quote: "더운데 부채질 좀 해주세요.",
         author: "- 박종성 회원님 -",
+    },
+    {
+        quote: "밥먹으러 갈래요?",
+        author: "- 신피오나 회원님 -",
+    },
+    {
+        quote: "Q. 자격증 합격하면 뭐 없나요?",
+        author: "A. 네 없어요 ㅋㅋ",
     },
     /*
     {
