@@ -3,6 +3,7 @@ const toDoInput = document.querySelector("#todo__form input");
 const toDoList = document.querySelector(".todo__list");
 
 const TODOS = "toDos"
+const CSS_IHIDDEN = "ihidden";
 
 let toDos = []; // 수정 가능
 
@@ -23,6 +24,7 @@ function toDoEdit(event) {
     toDoEditForm.remove();
 
     const toDoGetEditSpan = toDoEditTarget.children[0];
+    toDoGetEditSpan.classList.add(FADE_IN_BOX);
     toDoGetEditSpan.classList.remove(CSS_HIDDEN);
 
     const toDoGetEditBtns = toDoEditTarget.children[1];
@@ -30,7 +32,7 @@ function toDoEdit(event) {
         const toDoGetEditTargetChild = toDoGetEditBtns.children[i];
         if (toDoGetEditTargetChild) {
             toDoGetEditTargetChild.classList.add(FADE_IN_BOX);
-            toDoGetEditTargetChild.classList.remove(CSS_HIDDEN);
+            toDoGetEditTargetChild.classList.remove(CSS_IHIDDEN);
         }
     }
 }
@@ -40,9 +42,9 @@ function toDoGetEdit(event) {
     const toDoGetRemoveBtn = event.target.nextElementSibling;
     const toDoGetEditTarget = event.target.closest(".btn");
     const toDoGetEditSpan = toDoGetEditTarget.children[0];
+    toDoGetEditBtn.classList.add(CSS_IHIDDEN);
+    toDoGetRemoveBtn.classList.add(CSS_IHIDDEN);
     toDoGetEditSpan.classList.add(CSS_HIDDEN);
-    toDoGetEditBtn.classList.add(CSS_HIDDEN);
-    toDoGetRemoveBtn.classList.add(CSS_HIDDEN);
     
     const toDoGetEditForm = document.createElement("form");
     toDoGetEditForm.className = "toDoGetEditForm";
@@ -87,12 +89,14 @@ function toDoCreate(newTodo) {
     toDoSpan.classList.add("toDoSpan");
     const toDoLiBtn = document.createElement("div");
     toDoLiBtn.className = "toDoLiBtn";
-    const toDoEditBtn = document.createElement("button");
-    toDoEditBtn.innerText = "✎";
+    const toDoEditBtn = document.createElement("i");
     toDoEditBtn.classList.add("toDoEdit");
-    const toDoRemoveBtn = document.createElement("button");
-    toDoRemoveBtn.innerText = "𝗫";
+    toDoEditBtn.classList.add("fa-regular");
+    toDoEditBtn.classList.add("fa-pen-to-square");
+    const toDoRemoveBtn = document.createElement("i");
     toDoRemoveBtn.classList.add("toDoRemove");
+    toDoRemoveBtn.classList.add("fa-regular");
+    toDoRemoveBtn.classList.add("fa-trash-can");
 
     toDoLi.appendChild(toDoSpan);
     toDoLiBtn.appendChild(toDoEditBtn);
