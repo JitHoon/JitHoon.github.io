@@ -1,10 +1,10 @@
 const quotes = [
     {
         quote: "Still waters run deep",
-        author: "- 어떤 회원님's pick 속담 -",
+        author: "- 익명's pick 속담 -",
     },
     {
-        quote: "스터디 멈춰image.png",
+        quote: "스터디 멈춰",
         author: "- 최지훈 회원님 -",
     },
     {
