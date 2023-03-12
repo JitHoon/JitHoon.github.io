@@ -68,7 +68,7 @@ const q = document.querySelector("#quote__content");
 const a = document.querySelector("#quote__name");
 const refreshBtn = document.querySelector("#quote__refresh");
     
-q.innerText = "평소 스터디원들의 머리 속은?";
+q.innerText = "평소 스터디원들의 머릿속은?";
 a.innerText = "아래 버튼을 눌러보세요!";
 
 
