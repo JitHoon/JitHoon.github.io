@@ -21,7 +21,7 @@
     position: relative;
 }
 #login-form input {
-    padding: 15px;
+    padding: 13px;
 
     border: 2px solid white;
     border-radius: 10px;
@@ -37,6 +37,7 @@
 }
 #login-form__submit{
     margin: 0px;
+    margin-left: 5px;
     padding: 0px;
     
     font-weight: bolder;
