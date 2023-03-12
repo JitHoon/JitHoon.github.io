@@ -17,7 +17,7 @@ body{
 
     background: linear-gradient(0.25turn, #FC466B, #3F5EFB);
 }
-button{
+button, button::after, button::before{
     border: none;
     background-color: #ffffff00;
 }

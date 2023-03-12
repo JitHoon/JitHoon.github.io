@@ -68,12 +68,24 @@
 #quote__content{
     margin-top: 38px;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 19px;
     text-align: center;
 }
 #quote__name{
     margin: 0px;
-    margin-bottom: 100px;
     font-size: 15px;
     text-align: center;
+}
+#quote__refresh{
+    
+    margin-bottom: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#quote__refresh > i{
+    font-size: 17px;
+    background: none;
+    color: var(--gray);
 }

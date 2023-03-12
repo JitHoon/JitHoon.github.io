@@ -1,7 +1,7 @@
 const quotes = [
     {
         quote: "Still waters run deep",
-        author: "- 익명's pick 속담 -",
+        author: "- 익명의 스터디원 -",
     },
     {
         quote: "스터디 멈춰",
@@ -66,8 +66,17 @@ const quotes = [
 
 const q = document.querySelector("#quote__content");
 const a = document.querySelector("#quote__name");
+const refreshBtn = document.querySelector("#quote__refresh");
+    
+q.innerText = "평소 스터디원들의 머리 속은?";
+a.innerText = "아래 버튼을 눌러보세요!";
 
-const todayQuote = Math.floor(Math.random()*quotes.length);
 
-q.innerText = quotes[todayQuote].quote;
-a.innerText = quotes[todayQuote].author;
+function refreshQuotes() {
+    const todayQuote = Math.floor(Math.random()*quotes.length);
+    
+    q.innerText = quotes[todayQuote].quote;
+    a.innerText = quotes[todayQuote].author;
+}
+
+refreshBtn.addEventListener("click", refreshQuotes)
