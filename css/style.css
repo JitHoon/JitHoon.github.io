@@ -2,6 +2,7 @@
 @import "./user.css";
 @import "./todo.css";
 @import "./menu.css";
+@import "./options.css";
 
 body{
     height: auto;

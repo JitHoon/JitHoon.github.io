@@ -1,0 +1,18 @@
+.options{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+.options > span{
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    color: #353638;
+    font-size: 12px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255, 0.1);
+}
+.options:hover{
+    -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}

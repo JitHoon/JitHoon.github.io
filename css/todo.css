@@ -1,7 +1,6 @@
 .todo {
     height: 100vh;
     width: 100vh;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,9 +17,9 @@
     width: 100%;
     display: block;
     padding: 12px;
-    padding-left: 30px;
-    padding-right: 45px;
-    
+    padding-left: 20px;
+    padding-right: 50px;
+
     border: none;
     outline: none;
     text-align: left;
@@ -44,6 +43,8 @@
     cursor: pointer;
 }
 #todo__submit{
+    width: 40px;
+    padding: 0px;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -53,11 +54,13 @@
     color: #ff7300;
 }
 .todo__list{
+    height: 100%;
     width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
+    margin-bottom: 0px;
 
     font-size: 18px;
     font-family: 'Tilt Neon', 'Nanum Gothic Coding';
@@ -142,11 +145,9 @@
 @keyframes move {
     0% {
         background-position: 0 0;
-        -webkit-transform: translateZ(0);
     }
     50% {
         background-position: 400% 0;
-        -webkit-transform: translateZ(0);
     }
     100% {
         background-position: 0 0;
