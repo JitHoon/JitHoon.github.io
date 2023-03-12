@@ -5,8 +5,8 @@
 }
 .menu {
     position: fixed;
-    right: 4vh;
-    bottom: 7.5vh;
+    right: 15px;
+    bottom: 40px;
 }
 .menu > div{
     padding: 8px 10px;
