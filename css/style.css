@@ -31,6 +31,14 @@ button{
     animation: fadein 1.5s;
     -webkit-animation: fadein 1.5s; /* Safari and Chrome */
 }
+.hidden {
+    animation: fadein 3s;
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    display: none;
+}
+.ihidden{
+    font-size: 0px;
+}
 @keyframes fadein {
       from {
           opacity: 0;
@@ -46,9 +54,4 @@ button{
       to {
           opacity: 1;
       }
-}
-.hidden {
-    animation: fadein 3s;
-    -webkit-animation: fadein 3s; /* Safari and Chrome */
-    display: none;
 }

@@ -1,3 +1,4 @@
+const login = document.querySelector(".login");
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greetingStar = document.querySelector(".greetingStar");
@@ -22,24 +23,25 @@ function saveNickname(event) {
     const userName = loginInput.value;
     
     localStorage.setItem(USER_NAME_KEY,userName);
-    loginForm.classList.add(CSS_HIDDEN);
+    login.classList.add(CSS_HIDDEN);
     showGreeting(userName);
 };
 function resetNickname(event){ 
     window.scrollTo({ top: document.body.scrollHeight/3, behavior: "smooth" });
     greetingStar.classList.add(CSS_HIDDEN);
     greeting.classList.add(CSS_HIDDEN);
-    loginForm.classList.remove(CSS_HIDDEN);
+    login.classList.remove(CSS_HIDDEN);
     localStorage.removeItem("userName");
     checkUsername();
 }
 function checkUsername() {
     const savedUsername = localStorage.getItem(USER_NAME_KEY);
     if (savedUsername === null) {
-        loginForm.classList.remove(CSS_HIDDEN);
+        login.classList.remove(CSS_HIDDEN);
         // form의 submit의 기본 동작은 브라우저를 새로고침한다.
         loginForm.addEventListener("submit", saveNickname);
     } else {
+        login.classList.add(CSS_HIDDEN);
         showGreeting(savedUsername);
     };
 }
