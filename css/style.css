@@ -17,7 +17,7 @@ body{
 
     background: linear-gradient(0.25turn, #FC466B, #3F5EFB);
 }
-*:focus { 
+*:focus, *:active { 
     outline:none;
 }
 button, button::after, button::before{
