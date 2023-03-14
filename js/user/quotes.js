@@ -19,6 +19,10 @@ const quotes = [
         quote: "Q. 자격증 합격하면 뭐 없나요?",
         author: "A. 네 없어요 ㅋㅋ",
     },
+    {
+        quote: "배고파요",
+        author: "- 익명의 스터디원 -",
+    },
     /*
     {
         quote: "The way to get started is to quit talking and begin doing.",
