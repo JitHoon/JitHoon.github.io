@@ -3,4 +3,3 @@
 ![뇌냅스Dashboard사용설명서3](https://github.com/JitHoon/JitHoon.github.io/assets/101972330/737f2c51-5932-4e99-82b2-95801d2e4185)
 ![뇌냅스Dashboard사용설명서4](https://github.com/JitHoon/JitHoon.github.io/assets/101972330/89788c5c-f6ee-41a5-87df-06c74c6c3460)
 ![뇌냅스Dashboard사용설명서6](https://github.com/JitHoon/JitHoon.github.io/assets/101972330/31e1ecf0-1009-4089-8105-0e8b4f78dcd2)
-뇌냅스Dashboard사용설명서5
