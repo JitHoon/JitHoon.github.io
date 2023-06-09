@@ -1,6 +1,8 @@
 ## 🐰 뇌 빼고 냅다 스터디
 <p>"뇌냅스"는 뇌 뺴고 냅다 스터디의 애칭으로 대학교 내에서 혼자 공부하는 사람들을 위한 스터디 매칭 커뮤니티입니다.<br /> 뇌냅스 DashBoard를 통해 오픈 채팅방 참여, 스터디 인스타그램 기록, 노션 기록, 스터디원들의 평소 생각 옅보기, To Do List 작성이 가능합니다.</p>
+
 #### https://jithoon.github.io/
+
 ![뇌냅스Dashboard사용설명서1](https://github.com/JitHoon/JitHoon.github.io/assets/101972330/5039d8ed-cea4-4277-b09f-e2d5c1fe5526)
 ![뇌냅스Dashboard사용설명서2](https://github.com/JitHoon/JitHoon.github.io/assets/101972330/4465f3b2-6521-431e-b5c7-2a88ebdf3c67)
 ![뇌냅스Dashboard사용설명서3](https://github.com/JitHoon/JitHoon.github.io/assets/101972330/737f2c51-5932-4e99-82b2-95801d2e4185)
